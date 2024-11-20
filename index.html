@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xinxin form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="hero">
+            <img class="hero-img" src="resource/food.jpg" alt="food picture">
+            <!-- <img class='logo-img' src="resource/chef-hat-logo.png" alt="chef hat logo" width="150" height="150"> -->
+        </div>
+        <div class="content-area">
+           
+            <div class="content">
+                <p>This is not a real crepe festival!
+                    But you know you need something like this in your life to help you realize your wildest crepe dreams!
+                </p>
+                <p>Sign up <span>now</span> and get started!</p>
+                <p class="p-with-padding">You <span>know</span> you want to...</p>    
+            </div>
+            
+            
+            <form id="myForm" action="/submit" method="post">
+                <p>Let's do this!</p>  
+                <div class="form-area">
+                    <div class="first-column">
+                        <div>
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" id="first-name" name="first-name">
+                        </div>
+                        <div>
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div>
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password">
+                        </div>    
+                    </div>
+                    <div class="second-column">
+                        <div>
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" id="last-name" name="last-name">
+                        </div>
+                        <div>
+                            <label for="phone-number">PHONE NUMBER</label>
+                            <input type="number" id="phone-number" name="phone-number">
+                        </div>
+                        <div>
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm-password" name="confirm-password">
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="bottom-area">
+                <button type="submit" form="myForm">Create account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

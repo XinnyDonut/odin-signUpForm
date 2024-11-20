@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('resource/AlfaSlabOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin:0;
+}
+body {
+    display: flex;
+    line-height:1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color:black;    
+    justify-content: center;
+    align-items: center;
+    /* font-family: 'CustomFont', sans-serif; */
+    
+}
+.main{
+    display: flex;
+    max-width: 70vw;
+}
+.hero{
+    
+}
+.hero-img{
+    height: 100vh;
+    width: auto;
+}
+
+.content-area{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+     
+}
+
+.content,form,.bottom-area{
+    padding-left: 50px;
+    padding-right:250px;
+}
+.bottom-area{
+    padding-top:40px;
+    background-color: whitesmoke;
+    min-height: 300px;
+}
+.content{
+    padding-top:20vh;
+    background-color:whitesmoke;        
+}
+
+.p-with-padding{
+    padding-top: 4vh;
+    padding-bottom: 7vh;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap:30px;
+    flex:1;
+}
+.form-area{
+    display: flex;
+    justify-content:flex-start;
+    gap:40px;
+}
+.first-column,.second-column{
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+}
+
+
+
+
+label {
+    /* Uniform size & alignment */
+    display: block;
+    min-width: 90px;
+    text-align: left;
+    font: 0.7rem grey bold;
+  }
+  
+input{
+    /* To make sure that all text fields have the same font settings
+       By default, text areas have a monospace font */
+    font: 1em sans-serif;
+    /* Uniform text field size */
+    width: 280px;
+    box-sizing: border-box;
+    /* Match form field borders */
+    border: 1px solid #999;
+}  
+span{
+    font-style: italic;
+}
+p{
+    font:bold 1.3rem 'Arial', sans-serif;
+    text-wrap: pretty;
+}
+button{
+    background-color:burlywood;
+    color:white;
+    font:bold 1.1rem 'Arial', sans-serif;
+    padding:5px 15px;
+    border-radius: 10px;
+}
+.form-bottom p{
+    padding-top:15px;
+    font:bold 1.1rem 'Arial', sans-serif;
+
+}
+ /* Improve media defaults */
+ img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /* Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /* Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /* Improve line wrapping */
+
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  /*Create a root stacking context */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+
