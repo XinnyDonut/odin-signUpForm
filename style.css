@@ -18,20 +18,26 @@ body {
     background-color:black;    
     justify-content: center;
     align-items: center;
-    
-    
+        
 }
 .main{
     display: flex;
     max-width: 70vw;
 }
+main>*{
+    flex:1;
+}
 .hero{
     position: relative;
+    height:100vh;
+    min-width: 40vh;
+    overflow: hidden;
 }
 .hero-img{
-    height: 100vh;
-    width: auto;
-    flex:1;
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    object-position: center;
 }
 .overlay{
     background-color: black;
@@ -46,12 +52,35 @@ body {
     top:20%;
     display: flex;
     align-items: center;
+   
 }
 .logo p{
     font-family: 'CustomFont', sans-serif;
     font-size: 1.5rem;
     color: white;
 }
+
+.logo-img {
+    width: 150px;
+    height: auto; /* Change from fixed height to auto */
+}
+
+/* Add media queries for responsive design */
+@media (max-width: 768px) {
+    .logo-img {
+        width: 100px; /* Smaller logo on mobile */
+    }
+    
+    .logo {
+        flex-direction: column; /* Stack logo and text on mobile */
+        text-align: center;
+    }
+}
+
+
+
+
+
 
 .content-area{
     background-color: white;
@@ -123,24 +152,27 @@ input{
     font-size: 12px;
     display: none; /* Hidden by default */
     margin-top: 5px;
-  }
+}
   
-  input:invalid + .error-message {
+input:invalid + .error-message {
     display: block; /* Display error when input is invalid */
-  }
+}
   
-  input:valid + .error-message {
+input:valid + .error-message {
     display: none; /* Hide error when input is valid */
-  }
+}
+
 input:invalid{
     border:1px solid red;
-}  
+}
+
 input:focus{
     border:1px solid blue;
 }
 span{
     font-style: italic;
 }
+
 p{
     font:bold 1.3rem 'Arial', sans-serif;
     text-wrap: pretty;
