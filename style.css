@@ -115,8 +115,29 @@ input{
     width: 280px;
     box-sizing: border-box;
     /* Match form field borders */
-    border: 1px solid #999;
+    border: 1px solid #E5E7EB;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    display: none; /* Hidden by default */
+    margin-top: 5px;
+  }
+  
+  input:invalid + .error-message {
+    display: block; /* Display error when input is invalid */
+  }
+  
+  input:valid + .error-message {
+    display: none; /* Hide error when input is valid */
+  }
+input:invalid{
+    border:1px solid red;
 }  
+input:focus{
+    border:1px solid blue;
+}
 span{
     font-style: italic;
 }
