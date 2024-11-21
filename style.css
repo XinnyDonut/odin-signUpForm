@@ -15,10 +15,9 @@ body {
     display: flex;
     line-height:1.5;
     -webkit-font-smoothing: antialiased;
-    background-color:black;    
+    background-color:black; 
     justify-content: center;
-    align-items: center;
-        
+    align-items: center;           
 }
 .main{
     display: flex;
@@ -76,9 +75,6 @@ main>*{
         text-align: center;
     }
 }
-
-
-
 
 
 
@@ -141,7 +137,7 @@ input{
        By default, text areas have a monospace font */
     font: 1em sans-serif;
     /* Uniform text field size */
-    width: 280px;
+    width: 180px;
     box-sizing: border-box;
     /* Match form field borders */
     border: 1px solid #E5E7EB;
